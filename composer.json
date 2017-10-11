@@ -1,0 +1,12 @@
+{
+    "name": "eskrano/stcms",
+    "description": "Super cms",
+    "require": {},
+    "autoload" : {
+        "psr-4": {
+            "Cms\\": "cms/",
+            "System\\": "system/",
+            "Modules\\": "modules/"
+        }
+    }
+}
