@@ -15,11 +15,10 @@ class HomeController
         ];
     }
 
-    /**
-     * @Inject(request)
-     */
-    public function indexAction($request)
+    public function indexAction()
     {
-
+        return [
+            'test' => 1,
+        ];
     }
 }

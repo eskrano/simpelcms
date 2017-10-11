@@ -2,8 +2,12 @@
 
 namespace Cms\Core;
 
+use Cms\Core\Annotation\Collection\IAnnotation;
 use Cms\Core\Annotation\DependencyResolver;
+use Cms\Core\Annotation\Guesser;
+use Cms\Core\Annotation\ParamResolver;
 use Cms\Core\Container;
+use Cms\Core\Response\BaseResponse;
 
 class ApplicationHandler
 {
@@ -40,6 +44,12 @@ class ApplicationHandler
             })
             ->singleton('annotation_resolver', function ($container) use ($app) {
                 return new DependencyResolver;
+            })
+            ->singleton('annotation.guesser', function ($container) use ($app) {
+                return new Guesser();
+            })
+            ->singleton('annotation.param_resolver', function ($container) use($app) {
+                return new ParamResolver();
             });
 
         return $this;
@@ -75,13 +85,7 @@ class ApplicationHandler
             $rf = new \ReflectionMethod($controller, $map);
             $doc = $rf->getDocComment();
 
-            $annotations = [];
-            preg_match_all('/@(\w+)\(\s*([^\(]*?)\s*\)/', $doc, $annotations);
-
-            exit(var_dump($annotations));
-
-
-            $controller->$map();
+            $response = $controller->$map();
         } elseif(is_array($map)) {
             $cntrl = $map['controller'] ?: false;
             $action = $map['action'] ?: false;
@@ -90,9 +94,11 @@ class ApplicationHandler
                 throw new \InvalidArgumentException("Invalid array mapping");
             }
 
-            (new $cntrl)->$action();
+            $response = (new $cntrl)->$action();
         }
-        return;
+
+
+        return (new BaseResponse($response))->toResponse();
     }
 
     public function getModule($moduleName)
