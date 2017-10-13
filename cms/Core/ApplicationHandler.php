@@ -6,8 +6,10 @@ use Cms\Core\Annotation\Collection\IAnnotation;
 use Cms\Core\Annotation\DependencyResolver;
 use Cms\Core\Annotation\Guesser;
 use Cms\Core\Annotation\ParamResolver;
+use Cms\Core\Base\Controller;
 use Cms\Core\Container;
 use Cms\Core\Response\BaseResponse;
+use Cms\Core\Support\Config;
 
 class ApplicationHandler
 {
@@ -50,6 +52,12 @@ class ApplicationHandler
             })
             ->singleton('annotation.param_resolver', function ($container) use($app) {
                 return new ParamResolver();
+            })
+            ->singleton('config', function ($container) {
+                $config = new Config(SYSTEM_PATH . '/config');
+                $config->resolve();
+
+                return $config;
             });
 
         return $this;
@@ -71,7 +79,9 @@ class ApplicationHandler
             throw new \InvalidArgumentException("Module controller not found");
         }
 
+        /** @var Controller $controller */
         $controller = new $config['controller'];
+        $controller->boot($config);
         $mapping = $controller->mapping()['action'];
 
         if (! isset($mapping[$action])) {
@@ -98,7 +108,7 @@ class ApplicationHandler
         }
 
 
-        return (new BaseResponse($response))->toResponse();
+        (new BaseResponse($response))->toResponse()->handle();
     }
 
     public function getModule($moduleName)

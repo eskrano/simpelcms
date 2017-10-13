@@ -6,9 +6,6 @@ use Modules\Home\Controllers\HomeController;
 
 class Home
 {
-    public $x = 1;
-
-
     public function getConfig()
     {
         return [
@@ -17,6 +14,7 @@ class Home
             'container' => [
                 'App' => true,
             ],
+            'templatePath' => __DIR__ . '/Views',
             'controller' => HomeController::class,
         ];
     }

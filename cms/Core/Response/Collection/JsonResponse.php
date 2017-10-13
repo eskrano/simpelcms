@@ -11,7 +11,7 @@ class JsonResponse
         $this->response = $response;
     }
 
-    public function __invoke()
+    public function handle()
     {
         header('Content-Type: application/json');
 

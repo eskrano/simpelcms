@@ -2,7 +2,9 @@
 
 namespace Cms\Core\Response;
 
+use Cms\Core\Response\Collection\HtmlResponse;
 use Cms\Core\Response\Collection\JsonResponse;
+use Cms\Core\Response\Collection\NullResponse;
 
 class BaseResponse
 {
@@ -24,7 +26,15 @@ class BaseResponse
             return new JsonResponse($this->response->toResponse());
         }
 
+        if (is_string($this->response)) {
+            return new HtmlResponse($this->response);
+        }
+
         // todo add detect if template renderer.
+
+
+        return new NullResponse;
+
     }
 
     private function checkObject()

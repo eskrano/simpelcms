@@ -11,7 +11,7 @@ class HtmlResponse
         $this->response = $response;
     }
 
-    public function __invoke()
+    public function handle()
     {
         echo $this->response;
 
