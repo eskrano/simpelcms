@@ -4,7 +4,9 @@ namespace Modules\Home\Controllers;
 
 use Cms\Core\Base\Controller;
 use Cms\Core\Container;
+use Cms\Core\Database\EntityManager\Manager;
 use Cms\Core\Support\Config;
+use Modules\Home\Entity\Post;
 
 class HomeController extends Controller
 {
@@ -27,6 +29,12 @@ class HomeController extends Controller
 
     public function formAction()
     {
+        $post = new Post();
+        $post->setText('Hello world');
+        $post->setUsername('Alex');
+        $post->setId(1);
 
+        $manager = new Manager();
+        $manager->persist($post);
     }
 }

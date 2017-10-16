@@ -2,35 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="533bf882-7e14-439d-8476-34c46d3aee95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Base/Controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Crud/AbstractCrud.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Crud/Views/list.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Crud/Views/row.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Database/Driver/JsonFile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Database/Driver/JsonSchema.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Database/Exception/ConnectException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Database/IDatabaseDriver.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Response/Collection/NullResponse.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Support/Config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Support/Dumper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Support/Variable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Template/Engine.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Template/PhpEngine.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Template/RenderViews.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/functions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/Home/Views/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/Home/Views/partials/head.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/config/app.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/storage/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Database/Driver/Json/Persister.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Database/EntityManager/Manager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Database/IEntity.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Database/IEntityManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/Core/Database/IEntityType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/Home/Entity/Post.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/Core/ApplicationHandler.php" afterPath="$PROJECT_DIR$/cms/Core/ApplicationHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/Core/Response/BaseResponse.php" afterPath="$PROJECT_DIR$/cms/Core/Response/BaseResponse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/Core/Response/Collection/HtmlResponse.php" afterPath="$PROJECT_DIR$/cms/Core/Response/Collection/HtmlResponse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/Core/Response/Collection/JsonResponse.php" afterPath="$PROJECT_DIR$/cms/Core/Response/Collection/JsonResponse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/Core/Database/Driver/JsonSchema.php" afterPath="$PROJECT_DIR$/cms/Core/Database/Driver/JsonSchema.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Home/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/modules/Home/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Home/Home.php" afterPath="$PROJECT_DIR$/modules/Home/Home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.php" afterPath="$PROJECT_DIR$/web/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,40 +25,8 @@
       <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/Home/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-              <folding>
-                <element signature="e#44#73#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractCrud.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms/Core/Crud/AbstractCrud.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="row.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms/Core/Crud/Views/row.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IDatabaseDriver.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms/Core/Database/IDatabaseDriver.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="90">
+              <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -87,7 +35,7 @@
       <file leaf-file-name="JsonFile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms/Core/Database/Driver/JsonFile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="435">
               <caret line="30" column="84" lean-forward="false" selection-start-line="30" selection-start-column="84" selection-end-line="30" selection-end-column="84" />
               <folding>
                 <element signature="e#44#93#0#PHP" expanded="true" />
@@ -96,11 +44,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonSchema.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JsonSchema.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms/Core/Database/Driver/JsonSchema.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="300">
+              <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IEntityType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms/Core/Database/IEntityType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Post.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Home/Entity/Post.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="92" column="26" lean-forward="false" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+              <folding>
+                <element signature="e#39#79#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IEntityManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms/Core/Database/IEntityManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-107">
+              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Manager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms/Core/Database/EntityManager/Manager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+              <folding>
+                <element signature="e#51#81#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Persister.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms/Core/Database/Driver/Json/Persister.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-285">
+              <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IEntity.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms/Core/Database/IEntity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -111,26 +123,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectException.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms/Core/Database/Exception/ConnectException.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Home/Views/partials/head.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -175,7 +167,6 @@
         <option value="$PROJECT_DIR$/cms/Core/Template/RenderViews.php" />
         <option value="$PROJECT_DIR$/modules/Home/Home.php" />
         <option value="$PROJECT_DIR$/cms/Core/Base/Controller.php" />
-        <option value="$PROJECT_DIR$/modules/Home/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/cms/Core/ApplicationHandler.php" />
         <option value="$PROJECT_DIR$/modules/Home/Views/index.php" />
         <option value="$PROJECT_DIR$/modules/Home/Views/partials/head.php" />
@@ -187,6 +178,13 @@
         <option value="$PROJECT_DIR$/system/storage/.gitignore" />
         <option value="$PROJECT_DIR$/cms/Core/Database/Driver/JsonFile.php" />
         <option value="$PROJECT_DIR$/cms/Core/Database/Driver/JsonSchema.php" />
+        <option value="$PROJECT_DIR$/cms/Core/Database/IEntityType.php" />
+        <option value="$PROJECT_DIR$/cms/Core/Database/IEntity.php" />
+        <option value="$PROJECT_DIR$/cms/Core/Database/IEntityManager.php" />
+        <option value="$PROJECT_DIR$/cms/Core/Database/Driver/Json/Persister.php" />
+        <option value="$PROJECT_DIR$/modules/Home/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/cms/Core/Database/EntityManager/Manager.php" />
+        <option value="$PROJECT_DIR$/modules/Home/Entity/Post.php" />
       </list>
     </option>
   </component>
@@ -222,7 +220,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,7 +259,16 @@
               <item name="cms" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Exception" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Driver" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Json" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="studentcms.dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studentcms.dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Database" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EntityManager" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="studentcms.dev" type="b2602c69:ProjectViewProjectNode" />
@@ -280,22 +286,7 @@
               <item name="studentcms.dev" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="studentcms.dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="studentcms.dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="studentcms.dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="studentcms.dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="studentcms.dev" type="b2602c69:ProjectViewProjectNode" />
@@ -332,12 +323,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///var/www/studentcms.dev/modules/Home/Views/index.php&#10;Applica&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/ApplicationHandler.php&#10;Dum&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Support/Dumper.php&#10;fu&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/functions.php&#10;index.php&#9;FILE&#9;file:///var/www/studentcms.dev/web/index.php&#10;ho&#9;FILE&#9;file:///var/www/studentcms.dev/modules/Home/Controllers/HomeController.php&#10;Co&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Support/Config.php&#10;Con&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Support/Config.php&#10;app.php&#9;FILE&#9;file:///var/www/studentcms.dev/system/config/app.php&#10;Htm&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Response/Collection/HtmlResponse.php&#10;JsonRe&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Response/Collection/JsonResponse.php&#10;index.&#9;FILE&#9;file:///var/www/studentcms.dev/web/index.php&#10;Rou&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Routing.php&#10;App&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/ApplicationHandler.php" />
+    <property name="SearchEverywhereHistoryKey" value="IEnt&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Database/IEntityType.php&#10;Post&#9;FILE&#9;file:///var/www/studentcms.dev/modules/Home/Entity/Post.php&#10;Persi&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Database/Driver/Json/Persister.php&#10;HomeCo&#9;FILE&#9;file:///var/www/studentcms.dev/modules/Home/Controllers/HomeController.php&#10;Applica&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/ApplicationHandler.php&#10;Dum&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Support/Dumper.php&#10;fu&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/functions.php&#10;index.php&#9;FILE&#9;file:///var/www/studentcms.dev/web/index.php&#10;ho&#9;FILE&#9;file:///var/www/studentcms.dev/modules/Home/Controllers/HomeController.php&#10;Co&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Support/Config.php&#10;Con&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Support/Config.php&#10;app.php&#9;FILE&#9;file:///var/www/studentcms.dev/system/config/app.php&#10;Htm&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Response/Collection/HtmlResponse.php&#10;JsonRe&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Response/Collection/JsonResponse.php&#10;index.&#9;FILE&#9;file:///var/www/studentcms.dev/web/index.php&#10;Rou&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/Routing.php&#10;App&#9;FILE&#9;file:///var/www/studentcms.dev/cms/Core/ApplicationHandler.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../icrm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="INHERIT" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -369,6 +363,7 @@
       <workItem from="1507707679588" duration="2814000" />
       <workItem from="1507717701486" duration="4603000" />
       <workItem from="1507787825619" duration="2816000" />
+      <workItem from="1507920363611" duration="4503000" />
     </task>
     <task id="LOCAL-00001" summary="Response Lib update.">
       <created>1507710222833</created>
@@ -377,11 +372,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507710222833</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Remove loader-wizard.php">
+      <created>1507920459603</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1507920459604</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22348000" />
+    <option name="totallyTimeSpent" value="26851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="104" y="85" width="1366" height="676" extended-state="6" />
@@ -414,65 +416,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Response Lib update." />
-    <option name="LAST_COMMIT_MESSAGE" value="Response Lib update." />
+    <MESSAGE value="Remove loader-wizard.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove loader-wizard.php" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/Home/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="e#44#73#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/Core/ModuleHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/Core/Container.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="51" lean-forward="false" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/Core/Routing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Home/Home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/Core/ApplicationHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="e#28#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms/Exception/PageNotFoundException.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -521,7 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -561,7 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -583,7 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -622,7 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="61" lean-forward="false" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,7 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,7 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
           <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,7 +665,7 @@
         <state relative-caret-position="178">
           <caret line="83" column="35" lean-forward="false" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
           <folding>
-            <element signature="e#28#75#0#PHP" expanded="true" />
+            <element signature="e#28#75#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -755,16 +699,6 @@
         <state relative-caret-position="15">
           <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Home/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <element signature="e#44#73#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -818,7 +752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cms/Core/Database/Driver/JsonFile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="435">
           <caret line="30" column="84" lean-forward="false" selection-start-line="30" selection-start-column="84" selection-end-line="30" selection-end-column="84" />
           <folding>
             <element signature="e#44#93#0#PHP" expanded="true" />
@@ -828,9 +762,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cms/Core/Database/Driver/JsonSchema.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="300">
+          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Home/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/Core/Database/IEntityManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/Core/Database/Driver/Json/Persister.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/Core/Database/EntityManager/Manager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="e#51#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/Core/Database/IEntityType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/Core/Database/IEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Home/Entity/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="92" column="26" lean-forward="false" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+          <folding>
+            <element signature="e#39#79#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

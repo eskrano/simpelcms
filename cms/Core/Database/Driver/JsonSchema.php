@@ -19,9 +19,4 @@ class JsonSchema
      */
     const MODIFIER_AUTO_INCREMENT = 'AI';
     const MODIFIER_TRIGGER = 'trigger';
-
-    public function generate()
-    {
-        
-    }
 }
